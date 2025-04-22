@@ -1,0 +1,36 @@
+@startuml
+
+
+class Persona{
+--
+- nombre:  String
+- apellido:  String
+- domicilio: String
+--
+
++Persona()
++Persona(String,String,String)
+
++setNombre(String):void
++setApellido(String):void
++setDocimicilio(String):void
+
++getNombre():String
++getApellido():String
++getDocimicilio():String
+
++toString():String
++mostrarNombreApellido():void
+}
+
+class Domicilio {
+
+-String calle;
+-int numero;
+-int piso;
+-String depto;
+-String ciudad;
+-String provincia;
+
+}
+@enduml
